@@ -29,7 +29,6 @@
           { nixpkgs.overlays = [ (import emacs-overlay) ]; }
           hyprland.homeManagerModules.default
           ./shell.nix
-          ./programming-env.nix
           ./kakoune.nix
           ./mpd.nix
           ./desktop.nix
