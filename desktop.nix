@@ -25,8 +25,8 @@
     enable = true;
     systemdIntegration = true;
     recommendedEnvironment = true;
-    extraConfig = builtins.readFile ./hyprland.conf
-    + builtins.readFile ./frappe.conf
+    extraConfig = builtins.readFile ./frappe.conf
+    + builtins.readFile ./hyprland.conf
     + "bind=SUPER,R,exec,${pkgs.bemenu}/bin/bemenu-run -b\n"
     + "bind=SUPER,P,exec,rofi -show";
   };
