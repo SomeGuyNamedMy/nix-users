@@ -3,7 +3,7 @@
 {
 
   home.pointerCursor = {
-      name = "Nordzy-cursors";
+      name = "Catppuccin-Latte-Lavender-Cursors";
       package = pkgs.nordzy-cursor-theme;
       gtk.enable = true;
   };
@@ -11,8 +11,8 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic";
-      package = pkgs.nordic;
+      name = "Catppuccin";
+      package = pkgs.catppuccin-gtk;
     };
   };
 
@@ -26,6 +26,7 @@
     systemdIntegration = true;
     recommendedEnvironment = true;
     extraConfig = builtins.readFile ./hyprland.conf
+    + builtins.readFile ./frappe.conf
     + "bind=SUPER,R,exec,${pkgs.bemenu}/bin/bemenu-run -b\n"
     + "bind=SUPER,P,exec,rofi -show";
   };
@@ -40,9 +41,8 @@
 
   programs.qutebrowser = {
     enable = true;
-    settings = {
-      window.transparent = true;
-    };
+    loadAutoconfig = true;
+    extraConfig = builtins.readFile ./catppuccin.py + "setup(c, frappe)";
   };
   programs.librewolf.enable = true;
 

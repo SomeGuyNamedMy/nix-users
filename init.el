@@ -107,8 +107,6 @@
 
 (global-ligature-mode)
 (unicode-fonts-setup)
-(load-theme 'nord)
-
 ;;keybindings
 (require 'meow)
 (meow-setup)

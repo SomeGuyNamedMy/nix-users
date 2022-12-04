@@ -32,6 +32,7 @@
           ./kakoune.nix
           ./mpd.nix
           ./desktop.nix
+          ./programming-env.nix
           ./packages.nix
         ];
       };
