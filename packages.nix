@@ -17,7 +17,6 @@
         blesh airshipper osu-lazer xonotic
 
         ytfzf minecraft fuzzel nordzy-icon-theme
-        rofi-wayland
 
         xfce.thunar imv evince pavucontrol
         blueman wlogout fractal zathura

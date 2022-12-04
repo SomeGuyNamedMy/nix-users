@@ -25,9 +25,9 @@
 
   programs.helix = {
     enable = true;
-    #settings = {
-    #  theme = "nord";
-    #};
+    settings = {
+      theme = "nord";
+    };
   };
 
   programs.bat = {
@@ -57,6 +57,7 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    enableNushellIntegration = true;
     settings = {
       add_newline = false;
       format = lib.concatStrings [

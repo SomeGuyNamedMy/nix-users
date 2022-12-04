@@ -8,7 +8,8 @@
         ligature
         unicode-fonts
         all-the-icons
-        catppuccin-theme
+        autothemer
+        nord-theme
         dirvish
         doom-modeline
         dashboard
