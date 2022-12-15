@@ -26,7 +26,7 @@
         #shell stuff
         thefuck tldr 
 
-        cachix 
+        cachix aria2
         # text stuff
         texlive.combined.scheme-medium texlab
         ltex-ls pandoc

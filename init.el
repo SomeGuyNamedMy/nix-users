@@ -108,6 +108,7 @@
 (global-ligature-mode)
 (unicode-fonts-setup)
 (load-theme 'nord)
+(add-to-list 'default-frame-alist '(alpha . (90 . 90)))
 ;;keybindings
 (require 'meow)
 (meow-setup)

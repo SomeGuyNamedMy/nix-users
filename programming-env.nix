@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }: {
   programs.emacs = {
     enable = true;
-    package = pkgs.emacsGit;
+    package = pkgs.emacsPgtk;
     extraPackages = epkgs:
       with epkgs; [
         # theming and ui

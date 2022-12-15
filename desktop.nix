@@ -11,7 +11,7 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Nordic";
+      name = "Nordic-darker";
       package = pkgs.nordic;
     };
     iconTheme = {
@@ -20,10 +20,16 @@
     };
   };
 
-  qt.enable = true;
-  qt.platformTheme = "gtk";
+  qt = {
+    enable = true;
+    platformTheme = "gtk";
+  };
 
-
+  dconf.settings = {
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = "menu:appmenu";
+    };
+  };
 
   wayland.windowManager.hyprland = {
     enable = true;
@@ -44,9 +50,9 @@
   };
 
   programs.rofi = {
-      enable = true;
-      package = pkgs.rofi-wayland;
-      theme = ./nord.rasi;
+    enable = true;
+    package = pkgs.rofi-wayland;
+    theme = ./nord.rasi;
   };
 
   programs.qutebrowser = {
@@ -54,6 +60,9 @@
     extraConfig = "config.source('${./nord-qutebrowser.py}')";
   };
   programs.librewolf.enable = true;
+  programs.chromium = {
+    enable = true;
+  };
 
   programs.wezterm = {
     enable = true;
